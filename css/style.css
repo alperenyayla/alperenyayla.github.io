@@ -1,0 +1,174 @@
+/* All */
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Header bar */
+.navbar{
+
+    border-bottom: 2px solid;
+}
+
+/* Alperen Yayla writing */
+.navbar-brand{
+    font-size: 2rem;
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 700;
+    font-style:normal;
+    border-bottom: 0px solid;
+}
+
+.bi{
+    font-size: 2rem;
+    color: #000000;
+}
+
+/* Navigation */
+.navbar-nav{
+    font-size: 1.2rem;
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border-bottom: 0px solid;
+}
+
+/* Navigation links */
+.nav-link{
+    color: #000000;
+}
+
+/* Navigation links shadow */
+.nav-link:hover {
+
+    border: 2px solid black;
+    border-radius: 0px;
+    box-shadow: 2px 2px;
+
+}
+
+body{
+    background-color:rgb(255, 255, 255);
+}
+
+.card{
+    background-color:aliceblue;
+    border: 0px solid;
+    border-radius: 0px;
+}
+
+.card-title{
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.card-text{
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.card:hover{
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 0px;
+    box-shadow: 3px 3px;
+}
+
+.card-img-top{
+    border: 0px solid;
+    border: 0px solid;
+    border-radius: 0px;
+}
+
+.battersea-soul{
+    background-color: rgba(204, 127, 86, 0.696);
+    
+    border: 1px;
+    border-radius: 0px;
+}
+
+.battersea-soul-2{
+    background-color: rgba(174, 201, 223, 0.467);
+    border: 1px;
+    border-radius: 0px;
+}
+
+.battersea-soul-3{
+    background-color: rgba(225, 173, 173, 0.601);
+    border: 1px;
+    border-radius: 0px;
+}
+
+.battersea-soul-4{
+    background-color: rgba(221, 170, 122, 0.485);
+    border: 1px;
+    border-radius: 0px;
+}
+
+body{
+    height: 100%;
+}
+
+.jazz{
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 768px) {
+    .jazz {
+        color: rgb(0, 0, 0);
+    }
+  }
+
+.background-jazz{
+    background-color: rgb(255, 255, 255);
+}
+
+
+@media screen and (min-width: 768px) {
+    .jazz-img {
+        border: 1px solid rgb(0, 0, 0);
+        box-shadow: 0px 0px rgb(0, 0, 0);
+      }
+}
+
+
+.jazz-wr{
+    font-style: normal;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 3px 3px;
+  }
+
+@media screen and (min-width: 768px) {
+  .jazz-wr{
+    font-style: normal;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px rgb(0, 0, 0);
+  }
+}
+
+.m-headline{
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+}
+
+.m-info{
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+}
+
+.m-text{
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+}
+
+.brickbeanies-img{
+}
+
+
+ 
