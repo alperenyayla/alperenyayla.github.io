@@ -7,10 +7,42 @@
     box-sizing: border-box;
 }
 
+body{
+    background:
+      repeating-conic-gradient(#ffffff 0 45deg,#d2791a 0 90deg)
+      0 0/100px 100px;
+}
+
+body{
+    background: linear-gradient(45deg,transparent 34%, #b87848 35%, #b87848 40%, transparent 41%, transparent 59%, #b87848  60%, #b87848 65%, transparent 66%),linear-gradient(135deg,transparent 34%, #b87848 35%, #b87848 40%, transparent 41%, transparent 59%, #b87848  60%, #b87848 65%, transparent 66%);
+    background-size: 1em 1em;
+    background-color: #ffffff;
+    opacity: 1
+}
+
+.comingsoon{
+    background-color: #ffffff;
+    font-family: "poppins", sans-serif;
+    font-size: 10vw;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 2px solid black;
+    box-shadow: 3px 3px;
+    
+
+}
+
+  
 /* Header bar */
 .navbar{
-
+    background-color: rgba(255, 255, 255, 0);
     border-bottom: 2px solid;
+    background: #ffffff;
 }
 
 /* Alperen Yayla writing */
@@ -21,6 +53,7 @@
     font-style:normal;
     border-bottom: 0px solid;
 }
+
 
 .bi{
     font-size: 2rem;
@@ -51,11 +84,11 @@
 }
 
 body{
-    background-color:rgb(255, 255, 255);
+    background-color:rgba(255, 255, 255, 0);
 }
 
 .card{
-    background-color:aliceblue;
+    background-color:transparent;
     border: 0px solid;
     border-radius: 0px;
 }
@@ -86,16 +119,20 @@ body{
 }
 
 .battersea-soul{
-    background-color: rgba(204, 127, 86, 0.696);
+    background-color:transparent;
     
-    border: 1px;
+    border: 2px solid black;
     border-radius: 0px;
 }
 
 .battersea-soul-2{
-    background-color: rgba(174, 201, 223, 0.467);
+    background-color: transparent;
     border: 1px;
     border-radius: 0px;
+}
+
+.image{
+    border: 0px solid black;
 }
 
 .battersea-soul-3{
