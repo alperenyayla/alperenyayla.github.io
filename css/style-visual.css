@@ -15,57 +15,61 @@ a:visited {
   text-decoration: none;
 }
 
-body{
-  background-image: linear-gradient(
-    180deg,
-    hsl(0deg 0% 100%) 0%,
-    hsl(291deg 63% 93%) 19%,
-    hsl(341deg 75% 89%) 39%,
-    hsl(14deg 89% 85%) 58%,
-    hsl(32deg 80% 81%) 78%,
-    hsl(0deg 0% 100%) 100%
-  );
-}
-
 #page-container {
-  position: relative;
-  min-height: 98vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+  background-color: #f5f3eb;
 }
 
-#content-wrap {
-  padding-bottom: 5rem;    /* Footer height */
+.design-placeholder {
+  --tartan-bands:
+    rgb(32 66 58 / 22%) 0 3.5rem,
+    transparent 3.5rem 4rem,
+    rgb(32 66 58 / 28%) 4rem 4.125rem,
+    transparent 4.125rem 6rem,
+    rgb(172 91 68 / 32%) 6rem 6.5rem,
+    transparent 6.5rem 8rem;
+
+  display: grid;
+  flex: 1;
+  place-items: center;
+  min-height: 22rem;
+  margin: 1rem clamp(1rem, 4vw, 3rem);
+  padding: clamp(1rem, 5vw, 4rem);
+  border: 1px solid #c8cfc2;
+  border-radius: 1rem;
+  background-color: #e8e9dc;
+  background-image:
+    repeating-linear-gradient(45deg, transparent 0 2px, rgb(32 66 58 / 5%) 2px 3px),
+    repeating-linear-gradient(0deg, var(--tartan-bands)),
+    repeating-linear-gradient(90deg, var(--tartan-bands));
+}
+
+.comingsoon {
+  margin: 0;
+  padding: clamp(1.25rem, 4vw, 3rem) clamp(1.5rem, 6vw, 4rem);
+  border: 1px solid #d4d9ce;
+  border-radius: 0.75rem;
+  background-color: #fcfbf6;
+  box-shadow: 0 0.75rem 2.5rem rgb(29 52 44 / 14%);
+  color: #19362e;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: clamp(2.25rem, 7vw, 6rem);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 1.05;
+  text-align: center;
 }
 
 #footer {
-  background-color: rgba(255, 255, 255, 0);
-  border-top: 0px solid;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 4rem;            /* Footer height */
+  padding-bottom: 1rem;
 }
 
 .footer {
   border-top: 0.25px solid;
 }
-
-
-.comingsoon{
-    background-color: #ffffff;
-    font-family: "poppins", sans-serif;
-    font-size: 10vw;
-    font-weight: 700;
-    font-style: normal;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border: 2px solid black;
-    box-shadow: 3px 3px;
-}
-
-  
 /* Header bar */
 .navbar{
     background-color: rgba(255, 255, 255, 0);
