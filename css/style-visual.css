@@ -1,0 +1,202 @@
+/* All */
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+body{
+  background-image: linear-gradient(
+    180deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(291deg 63% 93%) 19%,
+    hsl(341deg 75% 89%) 39%,
+    hsl(14deg 89% 85%) 58%,
+    hsl(32deg 80% 81%) 78%,
+    hsl(0deg 0% 100%) 100%
+  );
+}
+
+#page-container {
+  position: relative;
+  min-height: 98vh;
+}
+
+#content-wrap {
+  padding-bottom: 5rem;    /* Footer height */
+}
+
+#footer {
+  background-color: rgba(255, 255, 255, 0);
+  border-top: 0px solid;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;            /* Footer height */
+}
+
+.footer {
+  border-top: 0.25px solid;
+}
+
+
+.comingsoon{
+    background-color: #ffffff;
+    font-family: "poppins", sans-serif;
+    font-size: 10vw;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 2px solid black;
+    box-shadow: 3px 3px;
+}
+
+  
+/* Header bar */
+.navbar{
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 0px solid;
+}
+
+.navbar-inner{
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 0.25px solid;
+}
+
+/* Alperen Yayla writing */
+.navbar-brand{
+    font-size: 2rem;
+    border-bottom: 0px solid;
+    font-family: "granville", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.bi{
+    font-size: 2rem;
+    color: #000000;
+}
+
+/* Navigation */
+.navbar-nav{
+    font-family: "granville", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 0px solid;
+}
+
+/* Navigation links */
+.nav-link{
+    color: #000000;
+}
+
+/* Navigation links shadow */
+.nav-link:hover{
+    color: #ce521c;
+}
+
+.active-nav {
+    color: #000000;  /* Change this to your desired color */
+    font-weight:600;
+}
+
+.footer-text{
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.001cap;
+    font-style: normal;
+    border-bottom: 0px solid;
+    color: #000000;
+    
+}
+
+.middle-pattern{
+    height: 100px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    background-image:  repeating-linear-gradient(45deg, #ce521c 25%, transparent 25%, transparent 75%, #ce521c 75%, #ce521c), repeating-linear-gradient(45deg, #ce521c 25%, #ffffff 25%, #ffffff 75%, #ce521c 75%, #ce521c);
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px;
+}
+
+/* Show tooltip on hover */
+.tooltip-box:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.s-home{
+    background-color: rgb(237, 207, 163);
+}
+
+.s-research{
+    background-color: rgb(222, 237, 197);
+}
+
+.s-design{
+    background-color: rgb(244, 243, 193);
+}
+
+/* Base styling for square boxes */
+.square {
+    width: 50px;
+    height: 50px;
+    border: 0px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    overflow: hidden; /* Hide overflowing text */
+    text-align: center;
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Hover effect: Enlarge the square */
+.square:hover {
+    width:fit-content;
+    height: 50px;
+}
+
+/* Hide full text initially */
+.full-text {
+    display: none;
+    white-space: nowrap;
+    text-align: left;
+
+}
+
+/* Show full text and hide short text on hover */
+.square:hover .short-text {
+    display: none;
+    text-align: left;
+}
+
+.square:hover .full-text {
+    display: inline-block;
+    text-align: left; /* Left-align full text on hover */
+    padding-left: 10px; /* Optional: Add a small padding for better appearance */
+    width: 100%; /* Allow the full-text span to take up full width of the container */
+}
+
+
+
+

@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alperen Yayla</title>
+    <link rel="icon" href="/img/x.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="https://kit.fontawesome.com/154c7efc0d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/pod7zjs.css">
+
+  </head>
+
+  <!-- navigation bar -->
+  <nav class="navbar navbar-expand-md">
+    <div class="container-fluid px-3 px-md-5">
+
+      <div class="navbar navbar-inner container-fluid p-0">
+
+        <a class="navbar-brand px-0 py-0" href="index.html">Alperen Yayla</a>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="/img/toggle-icon.png" alt="Menu" width="50" height="50">
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end px-0" id="navbarNav">
+          <div class="navbar-nav d-flex flex-row align-items-end flex-md-row flex-wrap justify-content-end">
+          <!-- <div class="navbar-nav d-flex flex-column align-items-end flex-md-row flex-wrap justify-content-end">-->
+
+            <h6 class="nav-item">
+              <a class="nav-link active-nav square s-home mx-1" aria-current="page" href="index.html">
+                <span class="short-text p-2 p-md-0"><div><img src="/img/home-icon.png" class="card-img-top" alt="..."></div></span>
+                <span class="full-text p-2">Home</span>
+              </a>
+            </h6>
+
+            <h6 class="nav-item">
+              <a class="nav-link square s-research d-flex justify-content-center align-items-center" href="research.html">
+                <span class="short-text p-2 p-md-0"><div><img src="/img/research-icon.png" class="card-img-top" alt="..."></div></span>
+                <span class="full-text p-2">Research</span>
+              </a>
+            </h6>
+
+            <h6 class="nav-item">
+              <a class="nav-link square s-design d-flex justify-content-center align-items-center mx-1" href="visual.html">
+                <span class="short-text p-2 p-md-0"><div><img src="/img/design-icon.png" class="card-img-top" alt="..."></div></span>
+                <span class="full-text p-2">Design</span>
+              </a>
+            </h6>
+
+            <!-- <h5 class="nav-item">
+              <a class="nav-link square s-a d-flex justify-content-center align-items-center" href="architecture.html">
+                <span class="short-text"><div>A</div></span>
+                <span class="full-text">Architecture</span>
+              </a>
+            </h5> -->
+
+            <!-- <h5 class="nav-item">
+              <a class="nav-link square s-c d-flex justify-content-center align-items-center" href="about.html">
+                <span class="short-text"><div>C</div></span>
+                <span class="full-text">Contact</span>
+              </a>
+            </h5> -->
+
+          </div>
+        </div>
+
+    </div>
+  </nav>
+
+  <!-- body -->
+  <body id="page-container">
+
+    <!-- introduction & works -->
+    <div id="content-wrap">
+
+      <!-- navigation -->
+      <div class="row px-3 px-md-5 pt-1">
+
+        <div class="col-sm-0 col-xxl-0"></div>
+
+        <div class="col-sm-12 col-xxl-12">
+
+          <!-- Navigation texts -->
+          <div class="h6 d-flex flex-wrap justify-content-start column-gap-3 row-gap-0">
+
+            <a class="navigation-text" data-bs-toggle="collapse" href="#collapseLatest" role="button" aria-expanded="true" aria-controls="collapseLatest" aria-controls="collapseResearchInterests">
+              Latest!</i> <!-- You can use dash icon for collapse -->
+            </a>
+
+            <a class="navigation-text" data-bs-toggle="collapse" href="#collapseResearchInterests" role="button" aria-expanded="true" aria-controls="collapseResearchInterests">
+              Research interests</i> <!-- You can use dash icon for collapse -->
+            </a>
+
+            <a class="navigation-text" data-bs-toggle="collapse" href="#collapseOngoingWorks" role="button" aria-expanded="true" aria-controls="collapseOngoingWorks">
+              Ongoing works</i> <!-- You can use dash icon for collapse -->
+            </a>
+
+            <a class="navigation-text" data-bs-toggle="collapse" href="#collapsePeer" role="button" aria-expanded="true" aria-controls="collapsePeer">
+              Peer-reviewed journal articles <!-- You can use dash icon for collapse -->
+            </a>
+
+            <a class="navigation-text" data-bs-toggle="collapse" href="#collapseReports" role="button" aria-expanded="true" aria-controls="collapseReports">
+              Reports and working papers <!-- You can use dash icon for collapse -->
+            </a>
+
+            <a class="navigation-text" data-bs-toggle="collapse" href="#collapseConference" role="button" aria-expanded="true" aria-controls="collapseConference">
+              Conference papers <!-- You can use dash icon for collapse -->
+            </a>
+
+            <a class="navigation-text" data-bs-toggle="collapse" href="#collapseAwards" role="button" aria-expanded="true" aria-controls="collapseAwards">
+              Awards <!-- You can use dash icon for collapse -->
+            </a>
+
+            <a class="navigation-text" data-bs-toggle="collapse" href="#collapseResearchProfiles" role="button" aria-expanded="true" aria-controls="collapseResearchProfiles">
+              Research profiles <!-- You can use dash icon for collapse -->
+            </a>
+
+            <a class="navigation-text" data-bs-toggle="collapse" href="#collapseContact" role="button" aria-expanded="true" aria-controls="collapseContact">
+              Get in touch! <!-- You can use dash icon for collapse -->
+            </a>
+
+            <a href="#" class="navigation-text-showhide" id="toggleAll">Show all</a>
+
+
+
+            <!-- <a href="#Latest" class="navigation-text">Latest</a>
+            <a href="#ResearchInterests" class="navigation-text">Research Interests</a>
+            <a href="#OngoingWorks" class="navigation-text">Ongoing works</a>
+            <a href="#PeerReviewedJournalArticles" class="navigation-text">Peer reviewed articles</a>
+            <a href="#Reports" class="navigation-text">Reports</a>
+            <a href="#Awards" class="navigation-text">Awards</a>
+            <a href="#Contact" class="navigation-text">Get in touch!</a> -->
+
+          </div>
+
+        </div>
+
+        <div class="col-sm-0 col-xxl-0"></div>
+      
+      </div>
+
+      <!-- Latest -->
+      <div class="row px-3 px-md-5 pt-1">
+
+        <div class="col-sm-0 col-xxl-0"></div>
+
+        <div class="col-sm-12 col-xxl-12">
+
+          <div id="Latest" class="row">
+
+            <div class="col d-flex justify-content align-items-center">
+
+              <!-- <div>
+                <h4 class="intro-avatar">
+                  <img src="/img/myavatar.png" alt="..." height="100" class="mx-auto d-block">
+                </h4>
+              </div> -->
+
+              <div class="col ps-0">
+
+                <!-- <h4 class="main-title">
+
+                  Latest!
+
+                </h4>
+
+                <h5 class="introduction-text pt-3">
+        
+                  Just out in <a class="" href="/visual.html" target="_blank">Nature Sustainability</a>!
+                
+                </h5>
+
+                <h5 class="introduction-text pt-1">
+        
+                  Global wood harvest is sufficient for climate-friendly transitions to timber cities<a class="" href="/visual.html" target="_blank"></a>!
+                
+                </h5>
+
+                <h5 class="introduction-text pt-1">
+                  Increasing harvesting is under discussion to meet the supply of wood for timber cities, with potentially negative impacts on forests and biodiversity.
+                </h5> -->
+
+                <!-- Latest -->
+                <div class="row">
+                  <div id="Latest" class="d-flex align-items-center justify-content-between w-100 ">
+                    <h4 class="m-0 p-0 g-0 main-title-publication">
+                      <a class="btn-title m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseLatest" role="button" aria-expanded="true" aria-controls="collapseLatest">
+                        Latest!</i> <!-- You can use dash icon for collapse -->
+                      </a>
+                    </h4>
+                    <a class="btn-inline m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseLatest" role="button" aria-expanded="true" aria-controls="collapseLatest">
+                      <i class="bi bi-plus fs-4 collapse-icon"></i> <!-- You can use dash icon for collapse -->
+                    </a>
+                  </div>
+
+                  <div id="" class="">
+                    <h4 class="main-title-border p-0 m-0 g-0 mb-0"></h4>
+                  </div>
+
+                  <!-- Collapse content: not shown by default to show class="collapse show w-100" -->
+                  <div class="collapse w-100" id="collapseLatest">
+                    <div class="card">
+
+                      <h6 class="introduction-text pt-2">
+              
+                        Front cover of <a class="basic-link" href="https://www.nature.com/natsustain/volumes/8/issues/9" target="_blank"><i>Nature Sustainability!</i></a> | Global wood harvest is sufficient for climate-friendly transitions to timber cities 
+                      
+                      </h6>
+
+                      <h6 class="introduction-text">
+                      
+                      </h6>
+
+                      <h6 class="introduction-text col-xl-8 col-xxl-6  pb-2">
+                        Expanding plantation forests is under discussion to build future timber cities, with potentially negative impacts on natural forests and biodiversity. For example, did you know that tree plantations and logging are among the drivers of <a class="basic-link" href="https://www.worldwildlife.org/publications/deforestation-fronts-drivers-and-responses-in-a-changing-world-full-report" target="_blank">forest loss</a> in the Amazon rainforest? Here, we explore more sustainable pathways to timber cities. <a class="basic-link" href="https://doi.org/10.1038/s41893-025-01605-w" target="_blank">Read more!</a>
+                      </h6>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- <div class="col">
+
+              <img src="/img/research-icon.png" alt="..." height="50" class="mx-auto d-block">
+
+            </div> -->
+            
+          </div>
+
+          <!-- <div id="Latest" class="row px-5 pt-2">
+            <div class="col">A</div>
+            <div class="col">
+              <img src="/img/main.webp" alt="Your Image" class="img-fluid img-main">
+            </div>
+          </div> -->
+
+        </div>
+
+        <div class="col-sm-0 col-xxl-0"></div>
+      
+      </div>
+
+      <!-- Research interests -->
+      <div class="row px-3 px-md-5 pt-0">
+
+        <div class="col-sm-0 col-xxl-0"></div>
+
+        <div class="col-sm-12 col-xxl-12">
+
+          <div id="Latest" class="row">
+
+            <div class="col d-flex justify-content align-items-center">
+
+              <div class="col ps-0">
+
+                <!-- Research interests -->
+                <div class="row">
+
+                  <div id="ResearchInterests" class="d-flex align-items-center justify-content-between w-100 ">
+                    <h4 class="m-0 p-0 g-0 main-title-publication">
+                      <a class="btn-title m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseResearchInterests" role="button" aria-expanded="true" aria-controls="collapseResearchInterests">
+                        Research interests</i> <!-- You can use dash icon for collapse -->
+                      </a>
+                    </h4>
+                    <a class="btn-inline m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseResearchInterests" role="button" aria-expanded="true" aria-controls="collapseResearchInterests">
+                      <i class="bi bi-plus fs-4 collapse-icon"></i> <!-- You can use dash icon for collapse -->
+                    </a>
+                  </div>
+
+                  <div id="" class="">
+                    <h4 class="main-title-border p-0 m-0 g-0 mb-0"></h4>
+                  </div>
+
+                  <!-- Collapse content: not shown by default to show class="collapse show w-100" -->
+                  <div class="collapse w-100" id="collapseResearchInterests">
+
+                    <div class="card">
+                      
+                      <!-- Research interests intro -->
+                      <div>
+                        <h6 class="introduction-text pt-2">
+                
+                          <a class="" href="/visual.html" target="_blank"></a>
+                        
+                        </h6>
+
+                        <h6 class="introduction-text">
+                
+                          <a class="" href="/visual.html" target="_blank"></a>
+                        
+                        </h6>
+
+                        <h6 class="introduction-text col-xxl-6">
+
+                        </h6>
+                      </div>
+                      
+
+                      <!-- Posters -->
+                      <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 pt-0 g-2 pb-3">
+
+                        <div class="col">
+                          <div class="card-index d-flex flex-column h-100">
+                            <img src="/img/climate.png" class="card-img-top" alt="...">
+                            <div class="card-body p-2">
+                              <h6 class="card-text">How does climate change affect nature and humans?</h6>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card-index d-flex flex-column h-100">
+                            <img src="/img/forests-v2.png" class="card-img-top" alt="...">
+                            <div class="card-body p-2">
+                              <h6 class="card-text">How does anthropogenic land use transform the nature?</h6>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card-index d-flex flex-column h-100">
+                            <img src="/img/cities.png" class="card-img-top" alt="...">
+                            <div class="card-body p-2">
+                              <h6 class="card-text">What are the ecological and social impacts of urbanisation?</h6>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- <div class="col">
+                          <div class="card-index">
+                            <img src="..." class="card-img-top" alt="..."> -->
+                            <!-- <div class="card-body"> -->
+                              <!-- <h5 class="card-title">Climate change</h5> -->
+                              <!-- <img src="/img/cities.png" class="card-img-top" alt="..."> -->
+                              <!-- <p class="card-text">This is a short card.</p> -->
+                            <!-- </div>
+                          </div>
+                        </div> -->
+
+                        <div class="col">
+                          <div class="card-index d-flex flex-column h-100">
+                            <img src="/img/soil.png" class="card-img-top" alt="...">
+                            <div class="card-body p-2">
+                              <h6 class="card-text">How do climate interventions affect soil?</h6>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card-index d-flex flex-column h-100">
+                            <img src="/img/materials.png" class="card-img-top" alt="...">
+                            <div class="card-body p-2">
+                              <h6 class="card-text d-inline-block">Can material transitions help mitigate climate change?</h6>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <div class="card-index d-flex flex-column h-100">
+                            <img src="/img/data.png" class="card-img-top" alt="...">
+                            <div class="card-body p-2">
+                              <h6 class="card-text d-inline-block">How can data science support sustainable development?</h6>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            
+          </div>
+
+        </div>
+
+        <div class="col-sm-0 col-xxl-0"></div>
+      
+      </div>  
+
+      <!-- research works -->
+      <div class="row px-3 px-md-5 pt-0">
+
+        <div class="col-sm-0 col-xxl-0"></div>
+
+        <div class="col-sm-12 col-xxl-12">
+
+          <!-- Ongoing works -->
+          <div class="row">
+            <div id="OngoingWorks" class="d-flex align-items-center justify-content-between w-100 ">
+              <h4 class="m-0 p-0 g-0 main-title-publication">
+                <a class="btn-title m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseOngoingWorks" role="button" aria-expanded="true" aria-controls="collapseOngoingWorks">
+                  Ongoing works</i> <!-- You can use dash icon for collapse -->
+                </a>
+              </h4>
+              <a class="btn-inline m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseOngoingWorks" role="button" aria-expanded="true" aria-controls="collapseOngoingWorks">
+                <i class="bi bi-plus fs-4 collapse-icon"></i> <!-- You can use dash icon for collapse -->
+              </a>
+            </div>
+
+            <div id="Ongoing works" class="">
+              <h4 class="main-title-border p-0 m-0 g-0 mb-0"></h4>
+            </div>
+
+            <!-- Collapse content: not shown by default to show class="collapse show w-100" -->
+            <div class="collapse w-100" id="collapseOngoingWorks">
+              <div class="card">
+
+                <div class="publication-body">
+                  <h6 class="publication-text pt-2 pb-2">
+                    Gobal material transitions and ecology.<br>
+                    <span class="publication-info">Yayla et al. In preparation.</span>
+                  </h6>
+                </div>
+
+                <div class="publication-body">
+                  <h6 class="publication-text pb-2">
+                    Climate finance mechanisms for underdeveloped regions.<br>
+                    <span class="publication-info">Yayla et al. In preparation.</span>
+                  </h6>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Peer-reviewed journal article -->
+          <div class="row">
+            <div id="PeerReviewedJournalArticles" class="d-flex align-items-center justify-content-between w-100 ">
+              <h4 class="m-0 p-0 g-0 main-title-publication">
+                <a class="btn-title m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapsePeer" role="button" aria-expanded="true" aria-controls="collapsePeer">
+                  Peer-reviewed journal articles <!-- You can use dash icon for collapse -->
+                </a>
+              </h4>
+
+              <a class="btn-inline m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapsePeer" role="button" aria-expanded="true" aria-controls="collapsePeer">
+                <i class="bi bi-plus fs-4 collapse-icon"></i> <!-- You can use dash icon for collapse -->
+              </a>
+            </div>
+
+            <div id="" class="">
+              <h4 class="main-title-border p-0 m-0 g-0 mb-0"></h4>
+            </div>
+
+            <!-- Collapse content: shown by default -->
+            <div class="collapse w-100" id="collapsePeer">
+              <div class="card">
+
+                  <div class="publication-body">
+                    <h6 class="publication-text-last pt-2 pb-2">
+                      Mitigating hidden climate change impacts of timber cities critically depends on proactive forest and waste management. <br>
+                      <span class="publication-info">Yayla et al. (2026)</span>
+                      <a class="journal-name" href="https://doi.org/10.1021/acs.est.5c12250" target="_blank" class="">Environmental Science & Technology</a>.</h6>
+                    </h6>
+                  </div>
+
+                  <div class="publication-body">
+                    <h6 class="publication-text pb-2">
+                      Global wood harvest is sufficient for climate-friendly transitions to timber cities.<br>
+                      <span class="publication-info">Yayla et al. (2025)</span>
+                      <a class="journal-name" href="https://doi.org/10.1038/s41893-025-01605-w" target="_blank" class="">Nature Sustainability</a>.</h6>
+                    </h6>
+                  </div>
+
+                  <div class="publication-body">
+                    <h6 class="publication-text pb-2">Bayesian material flow analysis of the construction aggregate cycle in England. 
+                      <br>
+                      <span class="publication-info">Mason et al. (2025)</span>
+                      <a class="journal-name" href="https://doi.org/10.1016/j.resconrec.2025.108135" target="_blank" class="">Resources, Conservation and Recycling</a>.</h6>
+                  </div>
+
+                  <div class="publication-body">
+                    <h6 class="publication-text pb-2">Artificial intelligence (AI)-based occupant-centric heating ventilation and air conditioning (HVAC) control system for multi-zone commercial buildings.
+                      <br>
+                      <span class="publication-info">Yayla et al. (2022)</span>
+                      <a class="journal-name" href="https://doi.org/10.3390/su142316107" target="_blank" class="">Sustainability</a>.</h6>
+                  </div>
+
+                  <div class="publication-body">
+                    <h6 class="publication-text-last pb-2">Life cycle assessment with BIM towards sustainable energy policy-making: The case of urban transformation in Istanbul. 
+                      <br>
+                      <span class="publication-info">Yayla et al. (2021)</span>
+                      <a class="journal-name" href="https://doi.org/10.30880/ijscet.2021.12.03.015" target="_blank" class="">International Journal of Sustainable Construction Engineering and Technology</a>.</h6> 
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Reports and working papers -->
+          <div class="row">
+            <div id="Reports" class="d-flex align-items-center justify-content-between w-100 ">
+              <h4 class="m-0 p-0 g-0 main-title-publication">
+                <a class="btn-title m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseReports" role="button" aria-expanded="true" aria-controls="collapseReports">
+                  Reports and working papers <!-- You can use dash icon for collapse -->
+                </a>
+              </h4>
+
+              <a class="btn-inline m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseReports" role="button" aria-expanded="true" aria-controls="collapseReports">
+                <i class="bi bi-plus fs-4 collapse-icon"></i> <!-- You can use dash icon for collapse -->
+              </a>
+            </div>
+
+            <div id="Reports" class="">
+              <h4 class="main-title-border p-0 m-0 g-0 mb-0"></h4>
+            </div>
+
+            <!-- Collapse content: shown by default -->
+            <div class="collapse w-100" id="collapseReports">
+              <div class="card">
+
+                  <div class="publication-body">
+                    <h6 class="publication-text pt-2 pb-2">Material flow analysis: Insights and evidence from the NICER Programme.
+                      <br>
+                      <span class="publication-info">Myers et al. (2025)</span>
+                      <a class="journal-name" href="https://ce-hub.org/wp-content/uploads/2025/01/2024BS022-%E2%80%93-NICER-Programme-Insight-Report-MFA-final.pdf" target="_blank" class="">UKRI NICER Programme</a>.
+                    </h6>
+                  </div>
+
+                  <!-- <div class="publication-body">
+                    <p class="publication-text pb-2">Material flow analysis: Insights and evidence from the NICER Programme.
+                      <br>
+                      <span class="publication-info">Myers et al. (2025)</span>
+                      <span class="journal-name"></span>
+                      <a href="https://ce-hub.org/knowledge-hub/material-flow-analysis-insights-and-evidence-from-the-nicer-programme/" target="_blank" class="">See more!</a></p>
+                  </div> -->
+
+                  <div class="publication-body">
+                    <h6 class="publication-text-last pb-2">Our shared understanding: a circular economy in the built environment.
+                      <br>
+                      <span class="publication-info">Our Shared Understanding (2023)</span>
+                      <a class="journal-name" href="https://doi.org/10.17863/CAM.96973" target="_blank" class=""> University of Cambridge Repository</a>.</h6>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Conference papers  -->
+          <div class="row">
+            <div id="Conference" class="d-flex align-items-center justify-content-between w-100 ">
+              <h4 class="m-0 p-0 g-0 main-title-publication">
+                <a class="btn-title m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseConference" role="button" aria-expanded="true" aria-controls="collapseConference">
+                  Conference papers <!-- You can use dash icon for collapse -->
+                </a>
+              </h4>
+
+              <a class="btn-inline m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseConference" role="button" aria-expanded="true" aria-controls="collapseConference">
+                <i class="bi bi-plus fs-4 collapse-icon"></i> <!-- You can use dash icon for collapse -->
+              </a>
+            </div>
+
+            <div id="Conference" class="">
+              <h4 class="main-title-border p-0 m-0 g-0 mb-0"></h4>
+            </div>
+
+            <!-- Collapse content: shown by default -->
+            <div class="collapse w-100" id="collapseConference">
+              <div class="card">
+
+                  <div class="publication-body">
+                    <h6 class="publication-text pt-2 pb-2">Bayesian material flow analysis: A general methodology with application on wood life cycles and timber city transitions.
+                      <br>
+                      <span class="publication-info">Wang et al. (2025)</span>
+                      <a class="journal-name" href="https://www.agu.org/annual-meeting" target="_blank" class="">American Geophysical Union 2025</a> | American Geophysical Union.
+                    </h6>
+                  </div>
+
+                  <div class="publication-body">
+                    <h6 class="publication-text pb-2">Dynamic life cycle assessment of reinforced concrete and engineered timber buildings.
+                      <br>
+                      <span class="publication-info">Yayla et al. (2025)</span>
+                      <a class="journal-name" href="https://isie2025.sg/" target="_blank" class="">International Conference on Industrial Ecology 2025</a> | National University of Singapore.
+                    </h6>
+                  </div>
+
+                  <div class="publication-body">
+                    <h6 class="publication-text-last pb-2">The global wood cycle.
+                      <br>
+                      <span class="publication-info">Yayla et al. (2025)</span>
+                      <a class="journal-name" href="https://sbe.ethz.ch/" target="_blank" class="">Sustainable Built Environment Conference 2025</a> | ETH Zurich.</h6>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Awards -->
+          <div class="row">
+            <div id="Awards" class="d-flex align-items-center justify-content-between w-100 ">
+              <h4 class="m-0 p-0 g-0 main-title-publication">
+                <a class="btn-title m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseAwards" role="button" aria-expanded="true" aria-controls="collapseAwards">
+                  Awards <!-- You can use dash icon for collapse -->
+                </a>
+              </h4>
+              <a class="btn-inline m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseAwards" role="button" aria-expanded="true" aria-controls="collapseAwards">
+                <i class="bi bi-plus fs-4 collapse-icon"></i> <!-- You can use dash icon for collapse -->
+              </a>
+            </div>
+
+            <div id="Awards" class="">
+              <h4 class="main-title-border p-0 m-0 g-0 mb-0"></h4>
+            </div>
+
+            <!-- Collapse content: shown by default -->
+            <div class="collapse w-100" id="collapseAwards">
+              <div class="card">
+
+                  <div class="publication-body">
+                    <h6 class="publication-text pt-2 pb-2">The Imperial College Trust grant
+                      <br>
+                      <span class="publication-info"></span>
+                      <span class="journal-name"></span><a class="publication-info" href="" target="_blank" class=""></a>The Imperial College Trust | 2025</h6>
+                  </div>
+
+                  <div class="publication-body">
+                    <h6 class="publication-text pb-2">Professor Milija Pavlovic grant
+                      <br>
+                      <span class="publication-info"></span>
+                      <span class="journal-name"></span><a class="publication-info" href="" target="_blank" class=""></a>Imperial College London | 2025</h6>
+                  </div>                  
+
+                  <div class="publication-body">
+                    <h6 class="publication-text pb-2">Best poster award
+                      <br>
+                      <span class="publication-info"></span>
+                      <span class="journal-name"></span><a class="publication-info" href="" target="_blank" class=""></a>Towards a built environment: bridging the gap between research and practice symposium, London | 2023</h6>
+                  </div>
+
+                  <div class="publication-body">
+                    <h6 class="publication-text pb-2">Dixon scholarship
+                      <br>
+                      <span class="publication-info"></span>
+                      <span class="journal-name"></span><a class="publication-info" href="" target="_blank" class=""></a>Imperial College London | 2022-2026</h6>
+                  </div>
+
+                  <div class="publication-body">
+                    <h6 class="publication-text pb-2">Postgraduate research scholarship
+                      <br>
+                      <span class="publication-info"></span>
+                      <span class="journal-name"></span><a class="publication-info" href="" target="_blank" class=""></a>Republic of Türkiye Ministry of National Education | 2022-2026</h6>
+                  </div>
+
+                  <div class="publication-body">
+                    <h6 class="publication-text-last pb-2">Graduate research scholarship
+                      <br>
+                      <span class="publication-info"></span>
+                      <span class="journal-name"></span><a class="publication-info" href="" target="_blank" class=""></a>The Scientific and Technological Research Council of Türkiye | 2020-2022</h6>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Research profiles -->
+          <div class="row">
+            <div id="ResearchProfiles" class="d-flex align-items-center justify-content-between w-100 ">
+              <h4 class="m-0 p-0 g-0 main-title-publication">
+                <a class="btn-title m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseResearchProfiles" role="button" aria-expanded="true" aria-controls="collapseResearchProfiles">
+                  Research profiles <!-- You can use dash icon for collapse -->
+                </a>
+              </h4>
+              <a class="btn-inline m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseResearchProfiles" role="button" aria-expanded="true" aria-controls="collapseResearchProfiles">
+                <i class="bi bi-plus fs-4 collapse-icon"></i> <!-- You can use dash icon for collapse -->
+              </a>
+            </div>
+
+            <div id="ResearchProfiles" class="">
+              <h4 class="main-title-border p-0 m-0 g-0 mb-0"></h4>
+            </div>
+
+            <!-- Collapse content: shown by default -->
+            <div class="collapse w-100" id="collapseResearchProfiles">
+              <div class="card">
+
+                  <div class="publication-body">
+                    <h6 class="pt-2 pb-2">
+                      <a class="research-profiles" href="https://scholar.google.com/citations?user=Fu3D5m8AAAAJ&hl=en" target="_blank" class="">Google scholar</a>
+                    </h6>
+<!--                     <h6 class="">
+                      <a class="research-profiles" href="https://www.scopus.com/authid/detail.uri?authorId=57559227300" target="_blank" class="">Scopus</a>
+                    </h6>
+                    <h6 class="pb-2">
+                      <a class="research-profiles" href="https://www.webofscience.com/wos/author/record/2441003" target="_blank" class="">Web of science</a>
+                    </h6> -->
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div class="row">
+            <div id="Contact" class="d-flex align-items-center justify-content-between w-100 ">
+              <h4 class="m-0 p-0 g-0 main-title-publication">
+                <a class="btn-title m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseContact" role="button" aria-expanded="true" aria-controls="collapseContact">
+                  Get in touch! <!-- You can use dash icon for collapse -->
+                </a>
+              </h4>
+              <a class="btn-inline m-0 p-0 g-0" data-bs-toggle="collapse" href="#collapseContact" role="button" aria-expanded="true" aria-controls="collapseContact">
+                <i class="bi bi-plus fs-4 collapse-icon"></i> <!-- You can use dash icon for collapse -->
+              </a>
+            </div>
+
+            <!-- Collapse content: not shown by default -->
+            <div class="collapse w-100" id="collapseContact">
+              <div class="card">
+
+              <h6 class="contact-text pt-2">Have something in mind? Or just want to say hi? <a class="basic-link" href="mailto:a.yayla22@imperial.ac.uk">Send me an e-mail!</a></h6>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-0 col-xxl-0"></div>
+      
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer id="footer" class=" px-3 px-md-5">
+
+      <div class="footer">
+
+        <div class="row d-flex row d-flex justify-content-between align-items-end pt-4">
+          <div class="col-auto">
+            <h6 class="footer-text">© 2025. Alperen Yayla. All rights reserved.</h6>
+          </div>
+          <div class="col-auto text-end">
+            <h6 class="">
+              <!-- <a class="main-click-title" href="research.html"><i class="bi bi-instagram"></i></a> -->
+              <a class="footer-text px-1" href="https://scholar.google.com/citations?user=Fu3D5m8AAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar fa-xl" style="color: #000000;"></i></i></a>
+              <a class="footer-text" href="https://github.com/alperenyayla" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #000000;"></i></i></a>
+            </h6>
+          </div>
+        </div>
+
+      </div>
+      
+    </footer>
+
+    <script src="js/alperenyayla.js"></script>
+
+  </body>
