@@ -53,8 +53,8 @@
 }
 
 [data-bs-theme="dark"] {
-  --bs-body-bg: #17191e;
-  --bs-body-bg-rgb: 23, 25, 30;
+  --bs-body-bg: #292b30;
+  --bs-body-bg-rgb: 41, 43, 48;
   --bs-body-color: #eceef3;
   --bs-body-color-rgb: 236, 238, 243;
   --bs-border-color: #fff;
