@@ -20,47 +20,52 @@ a:visited {
   flex-direction: column;
   min-height: 100vh;
   min-height: 100svh;
-  background-color: #f5f3eb;
+  background-color: #fff;
 }
 
 .design-placeholder {
-  --tartan-bands:
-    rgb(32 66 58 / 22%) 0 3.5rem,
-    transparent 3.5rem 4rem,
-    rgb(32 66 58 / 28%) 4rem 4.125rem,
-    transparent 4.125rem 6rem,
-    rgb(172 91 68 / 32%) 6rem 6.5rem,
-    transparent 6.5rem 8rem;
+  --checker-square: clamp(2.75rem, 5vw, 5rem);
+  --sky-blue: #c5e6f8;
+  --claret: #5c1936;
+  --pattern-blue: var(--sky-blue);
+  --pattern-burgundy: var(--claret);
 
   display: grid;
   flex: 1;
-  place-items: center;
   min-height: 22rem;
-  margin: 1rem clamp(1rem, 4vw, 3rem);
-  padding: clamp(1rem, 5vw, 4rem);
-  border: 1px solid #c8cfc2;
-  border-radius: 1rem;
-  background-color: #e8e9dc;
+  background-color: #fff;
+}
+
+.design-placeholder,
+.comingsoon {
   background-image:
-    repeating-linear-gradient(45deg, transparent 0 2px, rgb(32 66 58 / 5%) 2px 3px),
-    repeating-linear-gradient(0deg, var(--tartan-bands)),
-    repeating-linear-gradient(90deg, var(--tartan-bands));
+    repeating-linear-gradient(90deg, var(--pattern-blue) 0 var(--checker-square), var(--pattern-burgundy) 0 calc(2 * var(--checker-square))),
+    repeating-linear-gradient(90deg, var(--pattern-burgundy) 0 var(--checker-square), var(--pattern-blue) 0 calc(2 * var(--checker-square))),
+    conic-gradient(var(--pattern-blue) 25%, var(--pattern-burgundy) 0 50%, var(--pattern-blue) 0 75%, var(--pattern-burgundy) 0);
+  background-position: top left, bottom left, center left;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-size:
+    100% var(--checker-square),
+    100% var(--checker-square),
+    calc(2 * var(--checker-square)) calc(100% - 2 * var(--checker-square));
 }
 
 .comingsoon {
+  --pattern-blue: var(--claret);
+  --pattern-burgundy: var(--sky-blue);
+
+  display: grid;
+  place-items: center;
   margin: 0;
-  padding: clamp(1.25rem, 4vw, 3rem) clamp(1.5rem, 6vw, 4rem);
-  border: 1px solid #d4d9ce;
-  border-radius: 0.75rem;
-  background-color: #fcfbf6;
-  box-shadow: 0 0.75rem 2.5rem rgb(29 52 44 / 14%);
-  color: #19362e;
+  color: transparent;
+  background-clip: text;
   font-family: "Inter", system-ui, sans-serif;
-  font-size: clamp(2.25rem, 7vw, 6rem);
+  font-size: clamp(1.15rem, 5.7vw, 2.75rem);
   font-weight: 700;
-  letter-spacing: -0.06em;
-  line-height: 1.05;
+  letter-spacing: -0.045em;
+  line-height: 1;
   text-align: center;
+  white-space: nowrap;
 }
 
 #footer {
@@ -169,6 +174,7 @@ a:visited {
     white-space: nowrap;
     overflow: hidden; /* Hide overflowing text */
     text-align: center;
+  white-space: nowrap;
     font-family: "forma-djr-display", sans-serif;
     font-weight: 600;
     font-style: normal;

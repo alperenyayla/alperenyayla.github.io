@@ -1,0 +1,130 @@
+.theme-controls {
+  position: absolute;
+  inset: 100% 0 auto auto;
+  z-index: 1;
+}
+
+.theme-controls .theme-toggle {
+  margin: 0.25rem;
+}
+
+.architecture-navbar-inner {
+  position: relative;
+}
+
+
+#navbarNavAltMarkup + .theme-controls {
+  border-top: 1px solid var(--bs-border-color);
+}
+
+
+.theme-toggle {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--bs-body-color);
+}
+
+.theme-toggle[hidden] {
+  display: none;
+}
+
+.theme-toggle span {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  background: linear-gradient(135deg, currentColor 50%, transparent 50%);
+}
+
+.theme-toggle[aria-pressed="true"] span {
+  background: linear-gradient(135deg, transparent 50%, currentColor 50%);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--bs-link-color);
+  outline-offset: 3px;
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: #17191e;
+  --bs-body-bg-rgb: 23, 25, 30;
+  --bs-body-color: #eceef3;
+  --bs-body-color-rgb: 236, 238, 243;
+  --bs-border-color: #fff;
+  --bs-link-color: #fff;
+  --bs-link-color-rgb: 255, 255, 255;
+  --bs-link-hover-color: #fff;
+  --bs-link-hover-color-rgb: 255, 255, 255;
+}
+
+[data-bs-theme="dark"] :is(body, #page-container, #footer) {
+  background-color: var(--bs-body-bg);
+}
+
+[data-bs-theme="dark"] :is(.card, .card-index, .card-1, .intro-avatar) {
+  background-color: transparent;
+  color: var(--bs-body-color);
+}
+
+[data-bs-theme="dark"] :is(.navbar-inner, .footer, .card-index, .img-main) {
+  border-color: var(--bs-border-color);
+}
+
+[data-bs-theme="dark"] :is(.main-title-border, .publication-text) {
+  border-bottom: 1px solid #555963;
+}
+
+[data-bs-theme="dark"] :is(.bi, .footer-text, .nav-link, .active-nav, .introduction-text) {
+  color: var(--bs-body-color);
+}
+
+[data-bs-theme="dark"] :is(
+  .basic-link, .journal-name, .btn-title,
+  .navigation-text-showhide, .latest-title-link, .email-click
+),
+[data-bs-theme="dark"] .email-click:hover {
+  color: var(--bs-link-color);
+}
+
+[data-bs-theme="dark"] :is(.navigation-text, .research-profiles, .btn-inline) {
+  color: #ff9b62;
+}
+
+[data-bs-theme="dark"] .text-dark {
+  color: var(--bs-body-color) !important;
+}
+
+/* Keep the original illustrations and their pastel navigation tiles legible. */
+[data-bs-theme="dark"] :is(.s-home, .s-research, .s-design),
+[data-bs-theme="dark"] :is(.s-home, .s-research, .s-design):hover {
+  color: #211b20;
+}
+
+@media (max-width: 380px) {
+  .navbar-brand {
+    margin-right: 0.25rem;
+    font-size: 1.55rem;
+  }
+
+  .navbar-toggler {
+    padding-inline: 0.25rem;
+  }
+}
+
+@media (forced-colors: active) {
+  .design-placeholder,
+  .design-placeholder .comingsoon {
+    background-image: none;
+  }
+
+  .design-placeholder .comingsoon {
+    color: CanvasText;
+  }
+}
