@@ -52,6 +52,14 @@
   outline-offset: 3px;
 }
 
+:root,
+[data-bs-theme="light"] {
+  --bs-link-color: #ce521c;
+  --bs-link-color-rgb: 206, 82, 28;
+  --bs-link-hover-color: #ce521c;
+  --bs-link-hover-color-rgb: 206, 82, 28;
+}
+
 [data-bs-theme="dark"] {
   --bs-body-bg: #292b30;
   --bs-body-bg-rgb: 41, 43, 48;
@@ -85,10 +93,7 @@
   color: var(--bs-body-color);
 }
 
-[data-bs-theme="dark"] :is(
-  .basic-link, .journal-name, .btn-title,
-  .navigation-text-showhide, .latest-title-link, .email-click
-),
+[data-bs-theme="dark"] :is(.latest-title-link, .email-click),
 [data-bs-theme="dark"] .email-click:hover {
   color: var(--bs-link-color);
 }
