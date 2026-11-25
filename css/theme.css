@@ -86,11 +86,15 @@
 }
 
 [data-bs-theme="dark"] :is(
-  .basic-link, .journal-name, .btn-title,
+  .basic-link, .journal-name,
   .navigation-text-showhide, .latest-title-link, .email-click
 ),
 [data-bs-theme="dark"] .email-click:hover {
   color: var(--bs-link-color);
+}
+
+[data-bs-theme="dark"] .btn-title {
+  color: #fff;
 }
 
 [data-bs-theme="dark"] :is(.navigation-text, .research-profiles, .btn-inline) {
