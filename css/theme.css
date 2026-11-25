@@ -52,24 +52,16 @@
   outline-offset: 3px;
 }
 
-:root,
-[data-bs-theme="light"] {
-  --bs-link-color: #ce521c;
-  --bs-link-color-rgb: 206, 82, 28;
-  --bs-link-hover-color: #ce521c;
-  --bs-link-hover-color-rgb: 206, 82, 28;
-}
-
 [data-bs-theme="dark"] {
   --bs-body-bg: #292b30;
   --bs-body-bg-rgb: 41, 43, 48;
   --bs-body-color: #eceef3;
   --bs-body-color-rgb: 236, 238, 243;
   --bs-border-color: #fff;
-  --bs-link-color: #fff;
-  --bs-link-color-rgb: 255, 255, 255;
-  --bs-link-hover-color: #fff;
-  --bs-link-hover-color-rgb: 255, 255, 255;
+  --bs-link-color: #ff9b62;
+  --bs-link-color-rgb: 255, 155, 98;
+  --bs-link-hover-color: var(--bs-link-color);
+  --bs-link-hover-color-rgb: var(--bs-link-color-rgb);
 }
 
 [data-bs-theme="dark"] :is(body, #page-container, #footer) {
@@ -93,13 +85,16 @@
   color: var(--bs-body-color);
 }
 
-[data-bs-theme="dark"] :is(.latest-title-link, .email-click),
+[data-bs-theme="dark"] :is(
+  .basic-link, .journal-name, .btn-title,
+  .navigation-text-showhide, .latest-title-link, .email-click
+),
 [data-bs-theme="dark"] .email-click:hover {
   color: var(--bs-link-color);
 }
 
 [data-bs-theme="dark"] :is(.navigation-text, .research-profiles, .btn-inline) {
-  color: #ff9b62;
+  color: var(--bs-link-color);
 }
 
 [data-bs-theme="dark"] .text-dark {

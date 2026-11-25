@@ -334,7 +334,7 @@ body{
 
 
 .journal-name{
-    color: var(--bs-link-color);
+    color: #0033ff;
     font-family: "forma-djr-display", sans-serif;
     font-weight: 500;
     font-style: italic;
@@ -351,7 +351,7 @@ body{
 }
 
 .btn-title{
-    color: var(--bs-link-color);
+    color: #0033ff;
 
 }
 
@@ -368,12 +368,12 @@ body{
 }
 
 .navigation-text-showhide{
-    color: var(--bs-link-color);
+    color: #0022ff;
     font-family: "forma-djr-display", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
 .basic-link{
-    color: var(--bs-link-color);
+    color: #0033ff;
 }
